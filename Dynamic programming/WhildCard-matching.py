@@ -12,9 +12,8 @@ class Solution:
                     dp[i][j]=dp[i-1][j-1]
                 elif p[j-1]=='*':
                     dp[i][j]=(dp[i][j-1] or dp[i-1][j])
-                else:
-                    dp[i][j]=False
         return dp[len(s)][len(p)]
 #https://www.youtube.com/watch?v=DSJ9kFsA_gs
+#https://www.geeksforgeeks.org/wildcard-pattern-matching/
 
                     
